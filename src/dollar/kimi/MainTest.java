@@ -1,15 +1,11 @@
 package dollar.kimi;
 
-import dollar.kimi.algorithm.KPM;
+import dollar.kimi.leetcode.LeetCode125;
 
 public class MainTest {
-	public static void main(String[] args) {
-		KPM kpm = new KPM();
-//		int[] next = kpm.getNextArray("ABCDABD");
-//		for (int n : next)
-//			System.out.println(n);
-
-		System.out.println(kpm.indexOf("ABDHXJSABDJ ABCDABD", "ABCDABD"));
+	public static void main(String[] args) throws InterruptedException {
+		LeetCode125 leet = new LeetCode125();
+		System.out.println(leet.isPalindrome(".,"));
 	}
 
 }
