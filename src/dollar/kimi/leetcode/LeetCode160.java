@@ -25,7 +25,7 @@ public class LeetCode160 {
 		return null;
 	}
 
-	// 双指针 还能这么搞 pA到头到B pB到头到A
+	// 双指针 还能这么搞 pA到头到B pB到头到A 主要路径相同
 	public ListNode getIntersectionNode2(ListNode headA, ListNode headB) {
 		if (headA == null || headB == null)
 			return null;
