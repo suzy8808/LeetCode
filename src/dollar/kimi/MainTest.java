@@ -1,17 +1,16 @@
 package dollar.kimi;
 
-import dollar.kimi.leetcode.LeetCode189;
+import dollar.kimi.algorithm.TreeNode;
+import dollar.kimi.leetcode.LeetCode235;
 
 public class MainTest {
 	// ["MinStack","push","push","push","top","pop","getMin","pop","getMin","pop","push","top","getMin","push","top","getMin","pop","getMin"]
 	// [[],[2147483646],[2147483646],[2147483647],[],[],[],[],[],[],[2147483647],[],[],[-2147483648],[],[],[],[]]
 	public static void main(String[] args) throws InterruptedException {
-		LeetCode189 leet = new LeetCode189();
-		int[] nums = new int[] { 1, 2, 3, 4, 5, 6, 7 };
-		leet.rotate2(nums, 3);
-		for (int num : nums)
-			System.out.println(num);
+		TreeNode root = TreeNode.getTreeFromArray(new Integer[] { 6, 2, 8, 0, 4, 7, 9, null, null, 3, 5 });
+		LeetCode235 leet = new LeetCode235();
 
+		System.out.println(leet.lowestCommonAncestor(root, new TreeNode(2), new TreeNode(4)).val);
 	}
 
 }
