@@ -62,4 +62,21 @@ public class TreeNode {
 		return list.toArray(new Integer[0]);
 
 	}
+
+	// ·´×ª¶þ²æÊ÷
+	public TreeNode invertTree(TreeNode root) {
+		root = doInvert(root);
+		return root;
+	}
+
+	private TreeNode doInvert(TreeNode root) {
+		if (root == null)
+			return null;
+		TreeNode temp = root.left;
+		root.left = root.right;
+		root.right = temp;
+		doInvert(root.left);
+		doInvert(root.right);
+		return root;
+	}
 }
