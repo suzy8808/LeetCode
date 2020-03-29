@@ -49,9 +49,9 @@ public class LeetCode475 {
 
 		int max = 0;
 		Arrays.sort(heaters);
-		int j = 0;
 		for (int i = 0; i < houses.length; i++) {
 			int d = 0;
+			int j = 0;
 			while (j < heaters.length) {
 				if (houses[i] == heaters[j]) {
 					d = 0;
