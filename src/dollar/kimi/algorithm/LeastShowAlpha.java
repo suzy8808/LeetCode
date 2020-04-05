@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class LastShowAlpha {
+public class LeastShowAlpha {
 	public String deleteLastAlpha(String s) {
 		if (s == null || s.length() == 0)
 			return s;

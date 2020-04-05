@@ -1,4 +1,4 @@
-package dollar.kimi;
+package dollar.kimi.leetcode;
 
 public class LeetCode292 {
 	public boolean canWinNim(int n) {
