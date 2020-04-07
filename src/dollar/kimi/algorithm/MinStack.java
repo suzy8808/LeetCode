@@ -16,17 +16,16 @@ public class MinStack {
 
 	public void push(int x) {
 		stack.add(x);
-		if (helper.isEmpty() || helper.peek() > x) {
+		if (helper.isEmpty() || helper.peek() >= x) {
 			helper.add(x);
 		}
 	}
 
 	public void pop() {
 		int x = stack.pop();
-		if (stack.isEmpty()) {
+		if (stack.isEmpty())
 			helper.clear();
-		}
-		if (helper.peek() == x)
+		else if (helper.peek() == x)
 			helper.pop();
 	}
 
