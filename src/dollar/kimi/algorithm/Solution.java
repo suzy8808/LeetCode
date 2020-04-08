@@ -48,4 +48,51 @@ public class Solution {
 		}
 	}
 
+	// 面试题13. 机器人的运动范围
+	public int movingCount(int m, int n, int k) {
+		int[][] matrix = new int[m][n];
+		int ans = 0;
+		for (int i = 0; i < m; i++) {
+			for (int j = 0; j < n; j++) {
+				if (isReachable(matrix, i, j, k))
+					ans++;
+			}
+		}
+		return ans;
+
+	}
+
+	private boolean isReachable(int[][] matrix, int i, int j, int k) {
+		if (i == 0 && j == 0)
+			return true;
+		if (i < 0 || i >= matrix.length || j < 0 || j >= matrix[0].length)
+			return false;
+		int x = i, y = j;
+		int sum = 0;
+		while (x > 0) {
+			sum += x % 10;
+			x /= 10;
+		}
+		while (y > 0) {
+			sum += y % 10;
+			y /= 10;
+		}
+		if (sum > k)
+			return false;
+		return isReachable(matrix, i - 1, j, k) || isReachable(matrix, i, j - 1, k);
+	}
+
+	public int movingCount2(int m, int n, int k) {
+		boolean[][] visited = new boolean[m][n];
+		return dfs(0, 0, 0, 0, visited, k);
+	}
+
+	public int dfs(int i, int j, int si, int sj, boolean[][] visited, int k) {
+		if (i < 0 || i >= visited.length || j < 0 || j >= visited[0].length || k < si + sj || visited[i][j])
+			return 0;
+		visited[i][j] = true;
+		return 1 + dfs(i + 1, j, (i + 1) % 10 != 0 ? si + 1 : si - 8, sj, visited, k)
+				+ dfs(i, j + 1, si, (j + 1) % 10 != 0 ? sj + 1 : sj - 8, visited, k);
+	}
+
 }
