@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import dollar.kimi.algorithm.iface.NestedInteger;
+import dollar.kimi.algorithm.NestedInteger;
 
 public class LeetCode341 implements Iterator<Integer> {
 	List<Integer> list;

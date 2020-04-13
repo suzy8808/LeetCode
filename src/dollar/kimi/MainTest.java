@@ -1,17 +1,29 @@
 package dollar.kimi;
 
-import dollar.kimi.leetcode.LeetCode151;
+import java.util.HashMap;
 
 public class MainTest {
 	// ["MinStack","push","push","push","top","pop","getMin","pop","getMin","pop","push","top","getMin","push","top","getMin","pop","getMin"]
 	// [[],[2147483646],[2147483646],[2147483647],[],[],[],[],[],[],[2147483647],[],[],[-2147483648],[],[],[],[]]
 	public static void main(String[] args) throws InterruptedException {
-//		LeetCode394 leet = new LeetCode394();
-//
-//		System.out.println(leet.decodeString("3[a2[b2[c]]]"));// abccbcc
-////abcc
-		LeetCode151 leet = new LeetCode151();
-		System.out.println(leet.reverseWords(" a good   example"));
+		HashMap<Integer, Tweet> map = new HashMap<Integer, Tweet>();
+		Tweet tweet2 = new Tweet(1, 0);
+		map.put(1, tweet2);
+		Tweet tweet = map.get(1);
+		tweet.time = 1;
+		System.out.println(map.get(1).time);
+	}
+
+}
+
+class Tweet {
+	int tweetId;
+	int time;
+
+	public Tweet(int tweetId, int time) {
+		super();
+		this.tweetId = tweetId;
+		this.time = time;
 	}
 
 }
