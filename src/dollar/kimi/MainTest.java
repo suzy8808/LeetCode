@@ -1,29 +1,13 @@
 package dollar.kimi;
 
-import java.util.HashMap;
+import dollar.kimi.leetcode.LeetCode152;
 
 public class MainTest {
-	// ["MinStack","push","push","push","top","pop","getMin","pop","getMin","pop","push","top","getMin","push","top","getMin","pop","getMin"]
+	// ['MinStack','push','push','push','top','pop','getMin','pop','getMin','pop','push','top','getMin','push','top','getMin','pop','getMin']
 	// [[],[2147483646],[2147483646],[2147483647],[],[],[],[],[],[],[2147483647],[],[],[-2147483648],[],[],[],[]]
 	public static void main(String[] args) throws InterruptedException {
-		HashMap<Integer, Tweet> map = new HashMap<Integer, Tweet>();
-		Tweet tweet2 = new Tweet(1, 0);
-		map.put(1, tweet2);
-		Tweet tweet = map.get(1);
-		tweet.time = 1;
-		System.out.println(map.get(1).time);
-	}
-
-}
-
-class Tweet {
-	int tweetId;
-	int time;
-
-	public Tweet(int tweetId, int time) {
-		super();
-		this.tweetId = tweetId;
-		this.time = time;
+		LeetCode152 leet = new LeetCode152();
+		leet.maxProduct(new int[] { 2, 3, -2, 4 });
 	}
 
 }
