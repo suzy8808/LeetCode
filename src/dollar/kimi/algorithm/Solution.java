@@ -1,5 +1,7 @@
 package dollar.kimi.algorithm;
 
+import java.util.Arrays;
+
 public class Solution {
 	// 滑动窗口的最大值
 	public int[] maxSlidingWindow(int[] nums, int k) {
@@ -179,5 +181,76 @@ public class Solution {
 			}
 		}
 		return dp[n];
+	}
+
+	// 面试题51. 数组中的逆序对
+	public int reversePairs(int[] nums) {
+		int len = nums.length;
+		if (len < 2)
+			return 0;
+		int[] copy = Arrays.copyOf(nums, len);
+		int[] tmp = new int[len];
+		return reversePairs(copy, 0, len - 1, tmp);
+
+	}
+
+	private int reversePairs(int[] nums, int left, int right, int[] tmp) {
+		if (right == left)
+			return 0;
+		int mid = left + (right - left) / 2;
+		int leftPairs = reversePairs(nums, left, mid, tmp);
+		int rightPairs = reversePairs(nums, mid + 1, right, tmp);
+		if (nums[mid] <= nums[mid + 1]) {
+			return leftPairs + rightPairs;
+		}
+		int crossPairs = mergeAndCount(nums, left, mid, right, tmp);
+
+		return crossPairs + leftPairs + rightPairs;
+	}
+
+	private int mergeAndCount(int[] nums, int left, int mid, int right, int[] tmp) {
+		for (int i = left; i <= right; i++) {
+			tmp[i] = nums[i];
+		}
+		int i = left;
+		int j = mid + 1;
+		int count = 0;
+		for (int k = left; k <= right; k++) {
+			if (i == mid + 1) {
+				nums[k] = tmp[j];
+				j++;
+			} else if (j == right + 1) {
+				nums[k] = tmp[i];
+				i++;
+			} else if (tmp[i] <= tmp[j]) {
+				nums[k] = tmp[i];
+				i++;
+			} else {
+				nums[k] = tmp[j];
+				j++;
+				count += mid - i + 1;
+			}
+		}
+
+		return count;
+	}
+
+	// 面试题56 - I. 数组中数字出现的次数
+	public int[] singleNumbers(int[] nums) {
+		int ret = 0;
+		int a = 0, b = 0;
+		for (int n : nums)
+			ret ^= n;
+		int div = 1;
+		while ((div & ret) == 0)
+			div <<= 1;
+		for (int n : nums) {
+			if ((div & n) == div) {
+				a ^= n;
+			} else {
+				b ^= n;
+			}
+		}
+		return new int[] { a, b };
 	}
 }
