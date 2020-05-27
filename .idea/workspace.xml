@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="ChangeListManager">
     <list default="true" id="3d1abb3e-2c80-4918-80e8-068ecdc0fac1" name="Default Changelist" comment="" />
+=======
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="59a54f35-7ce4-4854-a417-2f5291b839e8" name="Default Changelist" comment="" />
+>>>>>>> 0715d4167f6cec995ec60c9f49a4b6c1d16813d1
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +40,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="1c1dGmXkTr54rkGnbLErdt9tl7B" />
+=======
+  <component name="ProjectId" id="1c49bOdYoLmENsUM6qrAWO3Rf4a" />
+>>>>>>> 0715d4167f6cec995ec60c9f49a4b6c1d16813d1
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,13 +53,41 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+=======
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dollar.kimi.MainTest" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dollar.kimi.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainTest" />
+      </list>
+    </recent_temporary>
+>>>>>>> 0715d4167f6cec995ec60c9f49a4b6c1d16813d1
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="3d1abb3e-2c80-4918-80e8-068ecdc0fac1" name="Default Changelist" comment="" />
       <created>1589699939743</created>
       <option name="number" value="Default" />
@@ -46,6 +101,33 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1310" y="505" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1589702220149" />
+=======
+      <changelist id="59a54f35-7ce4-4854-a417-2f5291b839e8" name="Default Changelist" comment="" />
+      <created>1589777069575</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589777069575</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="739" y="210" key="FileChooserDialogImpl" timestamp="1590045523276">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="210" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590045523276" />
+    <state width="1860" height="283" key="GridCell.Tab.0.bottom" timestamp="1590239653898">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1860" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590239653898" />
